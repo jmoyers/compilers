@@ -100,7 +100,8 @@ Note that it matches the SMALLEST section that matches the pattern.
 ### Meaning functions
 
 * Take a given regular expression like `A+B`
-* Which is `A ∪ B`, or A Union B
+* Where A and B are the name of a set of characters, lets say (not the actual uppercase `A` and `B`)
+* This is equivalent to `A ∪ B`, or A Union B
 * Meaning function is L where
   * L(A+B) = L(A) ∪ L(B)
 
@@ -110,8 +111,23 @@ Note that it matches the SMALLEST section that matches the pattern.
 * Expressions and meaning are not 1-to-1
 
 **Notation?**
-* Notion is general is important because it defines how we think.
+* Notion in general is important because it defines how we think.
 * Arabic numeral system makes it much easier to reason about arithmetic than roman numeral system
 * Therefore, its important to have appropriate notation
 
-**Non 1-to-1 meanings?**
+**Many expressions = one meaning?**
+
+Consider the following expressions...
+* `0*`
+* `0 + 0*`
+* `ε + 00*`
+* `ε + 0 + 0*`
+
+
+* All have the same Meaning.
+* Many different Syntaxes can have the same Meaning. 
+* The basis for **optimization**
+* You replace one program with another that have the same meaning. 
+* One is faster or smaller or whatever your optimization parameters are
+
+Never want one meaning function mapping to two different syntaxes.
