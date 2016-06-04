@@ -65,8 +65,7 @@ So its hard sometimes.
 
 The basic premise is as follows...
 * a lexeme can sort of be described by a regular expression. 
-* they don't end up using regular expressions, they translate them into Finite Automata
-* Finite automata can be used to repesent a regular expression
+* Finite automata (later) can be used to repesent a regular expression
 * Really dense formal notation (I won't spend time on it, frankly)
 
 
