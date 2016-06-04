@@ -1,3 +1,3 @@
-# My Awesome Book
+My lecture notes for Stanford's compiler course available on Coursera.
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+[https://www.coursera.org/course/compilers](https://www.coursera.org/course/compilers)
