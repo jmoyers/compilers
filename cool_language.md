@@ -11,19 +11,23 @@
 * Expression based return (last expression in a block returns) as shown below by 1
 * Not like Rust in that you omit semi-colon to distinguish between a 'statement' and expression
 
-```class Main {
+```
+class Main {
   main(): Int { 1 }
-}```
+}
+```
 
 * Sometimes using pattern inheriting from standard library classes (such as IO), then calling member functions like `out_string`.
 * Also occasionally doing things like `(new IO).out_string("1\n")`, so composition is used too
 * `self` is the `this` equivalent keyword, and looks like it can be omitted
 
-```class Main inherits IO { 
+```
+class Main inherits IO { 
   main(): Object {              // return type associated with last expression
     out_string("Hello World\n") // out_string returning an object here, no semicolon needed here
   } 
-}```
+}
+```
 
 * `if` terminates with `fi`
 * `loop` terminates with `pool`
