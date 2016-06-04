@@ -63,21 +63,35 @@ So its hard sometimes and stuff.
 
 ### Regular Expressions
 
-The basic premise is as follows...
-* a lexeme can sort of be described by a regular expression. 
-* Finite automata (later) can be used to repesent a regular expression
+* **regular expression** specify **regular languages**
+* a lexeme can sort of be described by a regular expression
+* Finite automata (later) can be used to repesent a regular expression (used in lexer)
 * Really dense formal notation (I won't spend time on it, frankly)
+* 5 things and stuff
+  * Base case: 1 character string
+  * Base case: empty string
+  * Three compound expressions
+    * Union - same as logical OR, confusingly `+` is used
+    * Concatenation - add two things together, no symbol, just sitting together `ab`
+    * Iteration - `*` repeat 0 to some number of times
 
 Special symbols:
 * { } = a set
 * ε = epsilon = set with one {""}, an empty string
 
+**Compound Expressions**
+
 | Formal notation | Formal language | Regex | Plain english |
 | -- | -- | -- | -- |
 | `'a' + 'b'` | Union | `[abc]` | a or b |
 | `('a' + 'b')*` | Iteration | `[ab]*` | its a or b, repeating some number of times (including zero times) |
-| `('a' + 'b')+` |  | `[ab]+` | same as above, but need at least one char |
 | `ab` | Concatentation | `ab` | you see the real string `ab` in pattern |
-| `[ab]` | Concatentation | `ab` | you see the real string `abc` in pattern |
+
+**Other Stuff**
+
+| Formal notation | Formal language | Regex | Plain english |
+|--|--|--|--|
+| `('a' + 'b')+` |  | `[ab]+` | same as *, but need at least one char |
+| `('a' + 'b')?` |  | `[ab]?` | whole thing is optional |
 
 Note that it matches the SMALLEST section that matches the pattern.
