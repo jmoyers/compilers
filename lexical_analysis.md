@@ -76,7 +76,8 @@ Special symbols:
 | -- | -- | -- | -- |
 | `'a' + 'b'` | Union | `[abc]` | a or b |
 | `('a' + 'b')*` | Iteration | `[ab]*` | its a or b, repeating some number of times (including zero times) |
-| `('a' + 'b')+` |  | `[abc]+` | same as above, but need at least one char |
-| `abc` | Concatentation | `abc` | you see the real string `abc` in pattern |
+| `('a' + 'b')+` |  | `[ab]+` | same as above, but need at least one char |
+| `ab` | Concatentation | `ab` | you see the real string `ab` in pattern |
+| `[ab]` | Concatentation | `ab` | you see the real string `abc` in pattern |
 
 Note that it matches the SMALLEST section that matches the pattern.
