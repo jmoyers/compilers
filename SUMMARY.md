@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Cool Language](cool_language.md)
-* Lexical Analysis
+* [Lexical Analysis](lexical_analysis.md)
 * Finite Automata
 * Parsing
 * Top Down Parsing
