@@ -82,17 +82,17 @@ Special symbols:
 
 **Compound Expressions**
 
-| Non-set formal notation | Formal name | Regex | Plain english |
+| Non-shorthand | Formal name | Regex/Shorthand | Plain english |
 | -- | -- | -- | -- |
 | `'a' + 'b'` | Union (∪) | `[abc]` | a or b |
 | `('a' + 'b')*` | Iteration (*) | `[ab]*` | its a or b, repeating some number of times (including zero times) |
 | `ab` | Concatentation | `ab` | you see the real string `ab` in pattern |
 
-**Other Stuff**
+**Shorthand...**
 
-| Non-set formal notation | Formal name | Regex | Plain english |
+| Non-shorthand | Derivation | Regex/Shorthand | Plain english |
 |--|--|--|--|
-| `('a' + 'b')+` |  | `[ab]+` | same as *, but need at least one char |
+| `('a' + 'b')+` | `ab[ab]*` | `[ab]+` | same as *, but need at least one char |
 | `('a' + 'b')?` |  | `[ab]?` | whole thing is optional |
 
 Note that it matches the SMALLEST section that matches the pattern.
@@ -130,4 +130,27 @@ Consider the following expressions...
 * You replace one program with another that have the same meaning. 
 * One is faster or smaller or whatever your optimization parameters are
 
-Never want one meaning function mapping to two different syntaxes.
+Never want one meaning function mapping to two different syntaxes. Means its ambiguous.
+
+### Lexical Specifications
+
+I'm going to mostly write in the shorthand notation, since thats what every regex engine ever uses.
+
+**Example: Keyword `if` or `else` or `then` or...**
+* Shorthand: `'i''f' + 'e''l''s''e'` becomes `'if' + 'else'`
+* Said as: if union else
+
+**Example: Integer (non-empty string of digits)**
+* Naming...
+  * `digit = '0'+'1'+'2'...+'9'`
+* Multiple digits...
+  * `digit digit*`
+  * This pattern is shorthanded to `digit+` (at least one digit)
+
+**Example: Identifier: string of letters or digits, starting with letter**
+* Letters first...
+  * `letter = 'a' + 'b' ... + 'Z'`
+  * Shorthand: `letter = [a-zA-Z]`
+* Now add digits...
+  * `letter(letter+digit)*`
+  * Starts with a letter, followed by union of leter and digit repeated however many times
