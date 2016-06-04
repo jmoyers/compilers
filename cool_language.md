@@ -3,7 +3,8 @@
 ## Tools
 
 * **Assembler/Emulator** - spim, MIPS based emulator, takes a `.s` file
-* **Compiler** - coolc, takes a set of `.cl` files. Seems include std lib type stuff as source files in the list for your build.
+* **Compiler** - coolc, takes a set of `.cl` files. 
+* **stdlib** - Include std lib type stuff as source files in the list for your build
 * **Build** - `coolc source1.cl source2.cl && spim source1.s`
 
 
