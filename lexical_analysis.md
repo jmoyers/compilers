@@ -154,3 +154,28 @@ I'm going to mostly write in the shorthand notation, since thats what every rege
 * Now add digits...
   * `letter(letter+digit)*`
   * Starts with a letter, followed by union of leter and digit repeated however many times
+
+**Example: Whitespace**
+
+* Escape sequences, oh my
+  * \n = newline
+  * \r = carriage return
+  * \t = tab
+  *    = space
+* So therefore...
+  * Definition: `(' ' + '\n' + '\t')+` which by the way is just `[ \n\t]*` in any regex engine
+
+Skipping email shit. Not worth it, regex is old hat baby.
+
+**Example: Pascal** - this is a good one. 
+
+
+> Epsilon means optional (read as Union epsilon, but really they mean OR NOT HERE AT ALL BRO).
+
+```
+digit          = '0' + '1' + '2' + '3' + '4' + '5' + '6' + '7' + '8' + '9'
+digits         = digit+
+opt_fraction   = ('.'digits) + ε
+opt_exponent   = ('E' ('+' + '-' + ε) digits) + ε
+num            = digits opt_fraction opt_exponent
+```
