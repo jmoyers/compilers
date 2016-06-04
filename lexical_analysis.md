@@ -63,15 +63,16 @@ So its hard sometimes and stuff.
 
 ### Regular Expressions
 
-* **regular expression** specify **regular languages**
+* **regular expressions** specify **regular languages**
+* a list of them can formally specify what is in the language
 * a lexeme can sort of be described by a regular expression
-* Finite automata (later) can be used to repesent a regular expression (used in lexer)
+* Looking ahead: Finite automata can be used to repesent a regular expression
 * Really dense formal set notation (I won't spend time on it, frankly)
 * 5 things and stuff
   * Base case: 1 character string
-  * Base case: empty string
+  * Base case: empty string (epsilon or ε)
   * Three compound expressions
-    * Union - same as logical OR, confusingly `+` is used
+    * Union - `∪` or `+` which is the same as logical or, like `a+b` is a or b
     * Concatenation - add two things together, no symbol, just sitting together `ab`
     * Iteration - `*` repeat 0 to some number of times
 
@@ -83,8 +84,8 @@ Special symbols:
 
 | Non-set formal notation | Formal name | Regex | Plain english |
 | -- | -- | -- | -- |
-| `'a' + 'b'` | Union | `[abc]` | a or b |
-| `('a' + 'b')*` | Iteration | `[ab]*` | its a or b, repeating some number of times (including zero times) |
+| `'a' + 'b'` | Union (∪) | `[abc]` | a or b |
+| `('a' + 'b')*` | Iteration (*) | `[ab]*` | its a or b, repeating some number of times (including zero times) |
 | `ab` | Concatentation | `ab` | you see the real string `ab` in pattern |
 
 **Other Stuff**
@@ -95,3 +96,22 @@ Special symbols:
 | `('a' + 'b')?` |  | `[ab]?` | whole thing is optional |
 
 Note that it matches the SMALLEST section that matches the pattern.
+
+### Meaning functions
+
+* Take a given regular expression like `A+B`
+* Which is `A ∪ B`, or A Union B
+* Meaning function is L where
+  * L(A+B) = L(A) ∪ L(B)
+
+**So what's the meaning function for?**
+* Make clear what is syntax and what is semantic
+* Allows us to consider notation as separate issue
+* Expressions and meaning are not 1-to-1
+
+**Notation?**
+* Notion is general is important because it defines how we think.
+* Arabic numeral system makes it much easier to reason about arithmetic than roman numeral system
+* Therefore, its important to have appropriate notation
+
+**Non 1-to-1 meanings?**
