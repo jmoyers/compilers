@@ -59,7 +59,7 @@ Foo<Bar>      // template declaration
 cin >> var;   // stream operator
 Foo<Bar<Baz>> // nested template, previously had to be Foo<Bar<Baz> > <--extra space
 ```
-So its hard sometimes.
+So its hard sometimes and stuff.
 
 ### Regular Expressions
 
@@ -68,10 +68,9 @@ The basic premise is as follows...
 * Finite automata (later) can be used to repesent a regular expression
 * Really dense formal notation (I won't spend time on it, frankly)
 
-
 Special symbols:
 * { } = a set
-* ε = epsilon = set with one {""}
+* ε = epsilon = set with one {""}, an empty string
 
 | Formal notation | Formal language | Regex | Plain english |
 | -- | -- | -- | -- |
