@@ -18,8 +18,8 @@ class Main {
 }
 ```
 
-* Sometimes using pattern inheriting from standard library classes (such as IO), then calling member functions like `out_string`.
-* Also occasionally doing things like `(new IO).out_string("1\n")`, so composition is used too
+* Sometimes use inheritance for standard library classes (such as IO), call members (`out_string`)
+* Occasionally do things like `(new IO).out_string("1\n")`, so sometimes composition
 * `self` is the `this` equivalent keyword, and looks like it can be omitted
 
 ```
