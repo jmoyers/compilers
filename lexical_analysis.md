@@ -63,7 +63,12 @@ So its hard sometimes.
 
 ### Regular Expressions
 
-Not getting into formal notation here. They devote way too much time to it imo. Its useful to understand how they write out regular expressions in the context of the course though.
+The basic premise is as follows...
+* a lexeme can sort of be described by a regular expression. 
+* they don't end up using regular expressions, they translate them into Finite Automata
+* Finite automata can be used to repesent a regular expression
+* Really dense formal notation (I won't spend time on it, frankly)
+
 
 Special symbols:
 * { } = a set
@@ -71,12 +76,9 @@ Special symbols:
 
 | Formal notation | Formal language | Regex | Plain english |
 | -- | -- | -- | -- |
-| `'a' + 'b' + 'c'` | Union | `[abc]` | a or b or c |
-| `('a' + 'b' + 'c')*` | Iteration | `[abc]*` | either its empty, or its a or b or c, repeating |
-| `('a' + 'b' + 'c')+` |  | `[abc]+` | same as above, but need at least one char |
+| `'a' + 'b'` | Union | `[abc]` | a or b |
+| `('a' + 'b')*` | Iteration | `[ab]*` | its a or b, repeating some number of times (including zero times) |
+| `('a' + 'b')+` |  | `[abc]+` | same as above, but need at least one char |
 | `abc` | Concatentation | `abc` | you see the real string `abc` in pattern |
-| 0:6 | 1:6 | 2:6 | 3:6 |
-| 0:7 | 1:7 | 2:7 | 3:7 |
-| 0:8 | 1:8 | 2:8 | 3:8 |
 
 Note that it matches the SMALLEST section that matches the pattern.
