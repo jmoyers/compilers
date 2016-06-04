@@ -1,6 +1,7 @@
-# Contents
+# Summary
 
-* Cool Language
+* [Introduction](README.md)
+* [Cool Language](cool_language.md)
 * Lexical Analysis
 * Finite Automata
 * Parsing
@@ -17,3 +18,4 @@
 * Register Allocation
 * Garbage Collection
 * Java
+
