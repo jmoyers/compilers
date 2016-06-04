@@ -66,7 +66,7 @@ So its hard sometimes and stuff.
 * **regular expression** specify **regular languages**
 * a lexeme can sort of be described by a regular expression
 * Finite automata (later) can be used to repesent a regular expression (used in lexer)
-* Really dense formal notation (I won't spend time on it, frankly)
+* Really dense formal set notation (I won't spend time on it, frankly)
 * 5 things and stuff
   * Base case: 1 character string
   * Base case: empty string
@@ -81,7 +81,7 @@ Special symbols:
 
 **Compound Expressions**
 
-| Formal notation | Formal language | Regex | Plain english |
+| Non-set formal notation | Formal name | Regex | Plain english |
 | -- | -- | -- | -- |
 | `'a' + 'b'` | Union | `[abc]` | a or b |
 | `('a' + 'b')*` | Iteration | `[ab]*` | its a or b, repeating some number of times (including zero times) |
@@ -89,7 +89,7 @@ Special symbols:
 
 **Other Stuff**
 
-| Formal notation | Formal language | Regex | Plain english |
+| Non-set formal notation | Formal name | Regex | Plain english |
 |--|--|--|--|
 | `('a' + 'b')+` |  | `[ab]+` | same as *, but need at least one char |
 | `('a' + 'b')?` |  | `[ab]?` | whole thing is optional |
