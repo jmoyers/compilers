@@ -22,6 +22,7 @@ class Main {
 * Occasionally do things like `(new IO).out_string("1\n")`, so sometimes composition
 * `self` is the `this` equivalent keyword, and looks like it can be omitted
 
+**Inheritance, stdlib output functions**
 ```
 class Main inherits IO { 
   main(): Object {              // return type associated with last expression
