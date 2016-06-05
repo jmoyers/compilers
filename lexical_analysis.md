@@ -84,7 +84,7 @@ Special symbols:
 
 | Non-shorthand | Formal name | Regex/Shorthand | Plain english |
 | -- | -- | -- | -- |
-| `'a' + 'b'` | Union (∪) | `[abc]` | a or b |
+| `'a' + 'b'` | Union (∪) | `a|b` or `[ab]` | a or b |
 | `('a' + 'b')*` | Iteration (*) | `[ab]*` | its a or b, repeating some number of times (including zero times) |
 | `ab` | Concatentation | `ab` | you see the real string `ab` in pattern |
 
@@ -93,7 +93,9 @@ Special symbols:
 | Non-shorthand | Derivation | Regex/Shorthand | Plain english |
 |--|--|--|--|
 | `('a' + 'b')+` | `ab[ab]*` | `[ab]+` | same as *, but need at least one char |
-| `('a' + 'b')?` |  | `[ab]?` | whole thing is optional |
+| `('a' + 'b') + ε` |  | `[ab]?` | whole thing is optional |
+| `('a' + 'c'`+ .. 'z') | | `[a-z]` | the range of characters a through z |
+| | |`[^a-z]`| excloding the range of characters a-z |
 
 Note that it matches the SMALLEST section that matches the pattern.
 
@@ -184,3 +186,4 @@ So, things like...
 * digits: `12`
 * add optional fraction: `12.23` 
 * add optional exponent: `12.23E+2`
+
