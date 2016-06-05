@@ -125,6 +125,7 @@ Epsilon closure - they set of states were you to take every epsilon move from yo
 
 ![epsilon closure](epsilon-closure.png)
 
-
+* NFAs can get into a ton of states - 2<sup>n-1</sup> --- but its FINITE. 
+* Therefore, we can convert to DFA to simulate the machine.
 
 This looks promising: http://ivanzuzak.info/noam/webapps/fsm_simulator/
