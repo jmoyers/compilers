@@ -166,7 +166,7 @@ Note: The following is `(1+0)*1` again.
 Whew, that was gnarly. Honestly, got to take a minute to stew on that I think.
 
 ### Implementation
-* DFA can be implemented as a 2d table
+* DFA can be implemented as a 2D table
   * One dimension = states
   * One dimension = input symbols
   * Each transition defines where you end up (in which state)
