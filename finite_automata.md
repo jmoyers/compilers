@@ -165,4 +165,10 @@ Note: The following is `(1+0)*1` again.
 ![Subsequent 0 + 1 input](recurse-nfa-dfa.png)
 Whew, that was gnarly. Honestly, got to take a minute to stew on that I think.
 
+### Implementation
+* DFA can be implemented as a 2d table
+  * One dimension = states
+  * One dimension = input symbols
+  * Each transition defines where you end up (in which state)
+
 This looks promising: http://ivanzuzak.info/noam/webapps/fsm_simulator/
