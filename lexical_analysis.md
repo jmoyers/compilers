@@ -84,7 +84,7 @@ Special symbols:
 
 | Non-shorthand | Formal name | Regex/Shorthand | Plain english |
 | -- | -- | -- | -- |
-| `'a' + 'b'` | Union (∪) | `a|b` or `[ab]` | a or b |
+| `'a' + 'b'` | Union (∪) | `a vertical bar b` or `[ab]` | a or b |
 | `('a' + 'b')*` | Iteration (*) | `[ab]*` | its a or b, repeating some number of times (including zero times) |
 | `ab` | Concatentation | `ab` | you see the real string `ab` in pattern |
 
