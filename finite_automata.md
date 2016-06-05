@@ -33,22 +33,22 @@ They both can specify the regular languages. Simply think about it as a characte
 
 Okay, so, skipping the dumb ones.
 
-Example: any number of 1s, followed by a single 0
+Example (finite): any number of 1s, followed by a single 0
 
 ![](fig1.png)
 
 
 Note I forgot the start arrow, but it starts at A. Follow it in your head and you can pretty easily convince yourself that this which match the description. It also handles rejection, which you can also convince yourself of -- just have to remember that if you don't move, you reject.
 
-This can be simplified to a table of states.
+This can be simplified to a table of states and transitions for each input.
 
 |State|0 Input|1 Input|
 |--|--|--|
 |A|B  |A|
 |B| | | |
 
+This can be a lookup table, in a programming language, such as shown here: http://www.geeksforgeeks.org/searching-for-patterns-set-5-finite-automata/
 
 
 
 This looks promising: http://ivanzuzak.info/noam/webapps/fsm_simulator/
-Created state diagrams with: http://madebyevan.com/fsm/
