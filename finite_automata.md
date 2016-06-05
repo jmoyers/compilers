@@ -140,7 +140,7 @@ Epsilon closure - they set of states were you to take every epsilon move from yo
 * Final = any state of the DFA that has at least one of the final states of the NFA
 * Transition Function
   * X →<sup>a</sup> Y
-  * For a given state X, and another state Y, when is there a transition between them on some input a
+  * For a given state X, and another state Y, when is there a transition between on some input a
   * Under what conditions?
     * In state X, we need to know the set of states we can reach on input a `a(X)`
     * Take epsilon closure of that set of states `eps-clos(a(X))`
