@@ -211,5 +211,20 @@ R = Keyword + Identifier + Number + ...
 **Ambiguities in this algorithm**
 
 * Example: `==` as input
-  * Is this regarded as a single equals (assignment operator) vs double equals (comparison)
-* "Maximal Munch" -- always take the longer match
+  * Is this regarded as a single equals (assignment op) vs double equals (comparison op)
+* "Maximal Munch" -- always take the longer match, normally that does the right thing
+* So therefore its comparison
+
+* Example: `Keywords = 'if' + 'else' + ...`, `Idenifier = letter(letter+digit)*`
+  * `if` is in the language of keywords and also identifiers
+  * Formally
+    * X<sub>1</sub>...X<sub>n</sub> ∈ L(R) <-- string is in the language R
+    * X<sub>1</sub>...X<sub>n</sub> ∈ L(R<sub>j</sub>) <-- string matches some instance of a regex j
+    * X<sub>1</sub>...X<sub>n</sub> ∈ L(R<sub>h</sub>) <-- oh no, it matches a second one
+  * You could rewrite it so it excludes, but thats not practical
+  * So we choose the one listed first: so Keywords come before Identifiers
+
+**What happens if input doesn't match?**
+
+Don't ever let this happen basically. You have a category that is listed last that is an Error specification. And you can be lazy, since its listed last!
+
