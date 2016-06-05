@@ -163,7 +163,7 @@ I'm going to mostly write in the shorthand notation, since thats what every rege
   * \t = tab
   *    = space
 * So therefore...
-  * Definition: `(' ' + '\n' + '\t')+` which by the way is just `[ \n\t]*` in any regex engine
+  * Definition: `(' ' + '\n' + '\t')+` which by the way is just `[ \n\t]+` in any regex engine
 
 Skipping email shit. Not worth it, regex is old hat baby.
 
