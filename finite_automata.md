@@ -170,5 +170,7 @@ Whew, that was gnarly. Honestly, got to take a minute to stew on that I think.
   * One dimension = states
   * One dimension = input symbols
   * Each transition defines where you end up (in which state)
+  * Turns out there is lots of repetion in these tables
+  * A shared vector of states (represents one row) is common space optimization
 
 This looks promising: http://ivanzuzak.info/noam/webapps/fsm_simulator/
