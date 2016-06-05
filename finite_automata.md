@@ -67,9 +67,32 @@ I like to work through the obvious paths that look like state transition chains 
 * **Deterministic**: For each input, you can only take one path (no ε moves)
 * **Nondeterministic**: For each input, you can take many paths (can hae ε moves)
 
-We can also use ε-moves to describe any kind of multiple choice route. So the below state diagrams simulate each other.
+We can also use ε-moves to describe any kind of multiple choice route. The below state diagrams simulate each other.
 
 ![epsilon move](epsilon-move.png)
+
+* DFA = one path through the state graph to acceptance
+* NFA = can choose from many paths through state graph to acceptance
+* For NFA, As long as there is one possible path to acceptance, an input is accepted
+
+Due to the fact that there are multiple paths, a single input could get itself into multiple states. The state table shown way above for deterministic finite automata can be made with NFA, but each entry is a SET of possible states.
+
+* NFA = smaller (because they're ambiguous)
+* DFA = faster to execute (because there are no choices)
+* You **can convert a NFA INTO a DFA**
+
+Regular expressions are generally nondeterministic. So for implementation purposes we convert them to NFAs then into DFAs.
+
+### Regexp to NFA
+
+Finally, we can talk a bit about implementation.
+
+1. Lexical Specification → 
+2. Regular Expressions → 
+3. Nondeterminstic Finite Automata → 
+4. Deterministic Finite Automata → 
+5. Table-driven Implementation of Deterministic Finite Automata
+
 
 
 This looks promising: http://ivanzuzak.info/noam/webapps/fsm_simulator/
