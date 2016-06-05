@@ -18,7 +18,7 @@ They both can specify the regular languages. Simply think about it as a characte
 
 **Accept/Reject**
 * If we at the **end of input** and in **accepting state** => accept
-* Otherwise => reject -- this means if there is no transition for the input, it fals as well
+* Otherwise => reject -- this means if there is no transition for the input, it fails as well
 * Otherwise can be said that `S ⊈ F` // not totally sure this is the same symbol
 
 **Finite automata diagrams**
