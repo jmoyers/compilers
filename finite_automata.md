@@ -38,7 +38,7 @@ Example (deterministic): any number of 1s, followed by a single 0
 ![fig 1](fig1.png)
 
 
-I forgot the start arrow, but it starts at A. You can pretty easily convince yourself that this which match the description.
+I forgot the start arrow, but it starts at A.
 
 This can be simplified to a table of states and transitions for each input.
 
