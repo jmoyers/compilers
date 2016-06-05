@@ -172,5 +172,10 @@ Whew, that was gnarly. Honestly, got to take a minute to stew on that I think.
   * Each transition defines where you end up (in which state)
   * Turns out there is lots of repetion in these tables
   * A shared vector of states (represents one row) is common space optimization
+* NFA - may need this because the DFA could become huge in principle
+  * Also a table
+  * One dimension = states
+  * One dimension = input symbols AND epsilon
+  * Each transition defines where you end up as well, but its a SET of states
 
 This looks promising: http://ivanzuzak.info/noam/webapps/fsm_simulator/
