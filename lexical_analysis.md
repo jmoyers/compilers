@@ -175,7 +175,12 @@ Skipping email shit. Not worth it, regex is old hat baby.
 ```
 digit          = '0' + '1' + '2' + '3' + '4' + '5' + '6' + '7' + '8' + '9'
 digits         = digit+
-opt_fraction   = ('.'digits) + ε
+opt_fraction   = ('.'digits) + ε                   // also known as [\.digits]?
 opt_exponent   = ('E' ('+' + '-' + ε) digits) + ε
 num            = digits opt_fraction opt_exponent
 ```
+
+So, things like...
+* digits: `12`
+* add optional fraction: `12.23` 
+* add optional exponent: `12.23E+2`
