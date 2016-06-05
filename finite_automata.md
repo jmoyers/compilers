@@ -4,9 +4,9 @@ Finite automata = can be implementation of regex
 
 They both can specify the regular languages. Simply think about it as a character by character analysis of a string. This can also be thought of/implemented as a set of nested switch statements and state variables. Implementation can be boiled down to a lookup table, also.
 
-|Property|Symbol|
+|Finite automata has..|Symbol|
 |--|--|
-|Input alphabet|∑|
+|An input alphabet|∑|
 |A set of states|S|
 |A start state|n|
 |A set of accepting states|F⊆S|
