@@ -49,6 +49,18 @@ This can be simplified to a table of states and transitions for each input.
 
 This can be a lookup table, in a programming language, such as shown here: http://www.geeksforgeeks.org/searching-for-patterns-set-5-finite-automata/
 
+Example 2: I had some trouble working through these, so I thought I'd put them here.
 
+![Fig 2](fig2.png)
+
+Options (choose 1 regular language to match above):
+* (0 + 1)*
+* (1* + 0)(1 + 0)
+* 1* + (01)* + (001)* + (000*1)*
+* (0 + 1)*00
+
+So for graphs like the above with choices, I like to work through the obvious paths that look like concatenations towards the end of the graph (state transition chains which have no options). 
+
+From the above, you can work out that there are at least two zeroes in a row before hitting the last node. Due to repeating non-optional zeroes, the last one is correct.
 
 This looks promising: http://ivanzuzak.info/noam/webapps/fsm_simulator/
