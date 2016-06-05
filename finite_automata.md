@@ -103,4 +103,15 @@ We look at individual expressions, and where there is a choice, we use epsilon. 
 |A+B - union|![union](A+B.png)|
 |A* - iteration|![iteration](AStar.png)|
 
+
+### Build NFA for `(1+0)*1`**
+
+Its compound:
+* (1+0) = union
+* (1+0) = iteration
+* 1 = concatenation
+* Think about each step nested together based on the above diagrams
+
+![compound nfa](compound-nfa.png)
+
 This looks promising: http://ivanzuzak.info/noam/webapps/fsm_simulator/
