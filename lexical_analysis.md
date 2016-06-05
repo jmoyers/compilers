@@ -95,9 +95,7 @@ Special symbols:
 | `('a' + 'b')+` | `ab[ab]*` | `[ab]+` | same as *, but need at least one char |
 | `('a' + 'b') + ε` |  | `[ab]?` | whole thing is optional |
 | `('a' + 'c'`+ .. 'z') | | `[a-z]` | the range of characters a through z |
-| | |`[^a-z]`| excloding the range of characters a-z |
-
-Note that it matches the SMALLEST section that matches the pattern.
+| | |`[^a-z]`| excluding the range of characters a-z |
 
 ### Meaning functions
 
@@ -195,9 +193,23 @@ Symbol = `a ∈ S` means a is an element of set S - https://en.wikipedia.org/wik
 
 Turns out this is not enough for our needs, though.
 
-**What is the formal definition of lexical specification of the language?**
+**So whats the lexical definition of the whole language?**
 
 ```
 R = Keyword + Identifier + Number + ...
   = R₁+ R₂ + R₃ + ...
 ```
+
+**How do we actually use this?**
+
+* We use it to define a general algorithm
+* Let input be X<sub>1</sub> ... X<sub>n</sub> (strings)
+* For each input, check whether its in the language (loop)
+  * Otherwise known as: X<sub>1</sub>...X<sub>n</sub> ∈ L(R<sub>j</sub>)
+  * Where j is one of the regular expressions in the language R₁, R₂, R₃, etc...
+
+**Ambiguities in this algorithm**
+
+* Example: `==` as input
+  * Is this regarded as a single equals (assignment operator) vs double equals (comparison)
+* "Maximal Munch" -- always take the longer match
