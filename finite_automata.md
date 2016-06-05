@@ -63,8 +63,9 @@ I like to work through the obvious paths that look like state transition chains 
 
 ### Deterministic vs Nondeterministic
 
-* Deterministic: For each input, you can only take one path
-* Nondeterministic: For each input, you can take many paths
-* Epilson () moves: 
+* Epsilson (ε) moves: there is a choice whether you take the move
+* Deterministic: For each input, you can only take one path (no ε moves)
+* Nondeterministic: For each input, you can take many paths (can hae ε moves)
+
 
 This looks promising: http://ivanzuzak.info/noam/webapps/fsm_simulator/
