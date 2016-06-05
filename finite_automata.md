@@ -22,5 +22,4 @@ They both can specify the regular languages. Simply think about it as a characte
 * Otherwise can be said that `S ⊈ F` // not totally sure this is the same symbol
 
 
-
 Created state diagrams with: http://madebyevan.com/fsm/
