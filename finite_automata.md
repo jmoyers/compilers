@@ -49,7 +49,7 @@ This can be simplified to a table of states and transitions for each input.
 
 This can be a lookup table, in a programming language, such as shown here: http://www.geeksforgeeks.org/searching-for-patterns-set-5-finite-automata/
 
-Example 2: I had some trouble working through these, so I thought I'd put them here.
+Example 2 (finite): I had some trouble working through these, so I thought I'd put them here.
 
 ![Fig 2](fig2.png)
 
