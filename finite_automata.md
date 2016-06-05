@@ -33,7 +33,7 @@ They both can specify the regular languages. Simply think about it as a characte
 
 Okay, so, skipping the dumb ones.
 
-Example (finite): any number of 1s, followed by a single 0
+Example (deterministic): any number of 1s, followed by a single 0
 
 ![](fig1.png)
 
@@ -49,7 +49,7 @@ This can be simplified to a table of states and transitions for each input.
 
 This can be a lookup table, in a programming language, such as shown here: http://www.geeksforgeeks.org/searching-for-patterns-set-5-finite-automata/
 
-Example 2 (finite): I had some trouble working through these, so I thought I'd put them here.
+Example 2 (deterministic): I had some trouble working through these, so I thought I'd put them here.
 
 ![Fig 2](fig2.png)
 
@@ -60,5 +60,7 @@ Options (choose 1 regular language to match above):
 * (0 + 1)*00
 
 I like to work through the obvious paths that look like state transition chains which have no options.  From the above, you can work out that there are at least two zeroes in a row before hitting the last node. Due to repeating non-optional zeroes, the last one is correct.
+
+epsilon moves
 
 This looks promising: http://ivanzuzak.info/noam/webapps/fsm_simulator/
