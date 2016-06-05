@@ -31,5 +31,24 @@ They both can specify the regular languages. Simply think about it as a characte
 |A transition|![](transition.png)|
 
 
+Okay, so, skipping the dumb ones.
+
+Example: any number of 1s, followed by a single 0
+
+![](fig1.png)
+
+
+Note I forgot the start arrow, but it starts at A. Follow it in your head and you can pretty easily convince yourself that this which match the description. It also handles rejection, which you can also convince yourself of -- just have to remember that if you don't move, you reject.
+
+This can be simplified to a table of states.
+
+|State|0 Input|1 Input|
+|--|--|--|
+|A|B  |A|
+|B| | | |
+
+
+
+
 This looks promising: http://ivanzuzak.info/noam/webapps/fsm_simulator/
 Created state diagrams with: http://madebyevan.com/fsm/
