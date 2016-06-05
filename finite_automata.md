@@ -93,6 +93,14 @@ Finally, we can talk a bit about implementation.
 4. Deterministic Finite Automata → 
 5. Table-driven Implementation of Deterministic Finite Automata
 
+**Converting to NFA**
 
+We look at individual expressions, and where there is a choice, we use epsilon
+
+|R|Diagram|
+|--|--|
+|AB - concatenation|![concat](AB.png)|
+|A+B - union|![union](A+B.png)|
+|A* - iteration|![iteration](AStar.png)|
 
 This looks promising: http://ivanzuzak.info/noam/webapps/fsm_simulator/
