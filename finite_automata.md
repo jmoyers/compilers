@@ -25,11 +25,10 @@ They both can specify the regular languages. Simply think about it as a characte
 
 |Name|Symbol|
 |--|--|
-|A state||
-|The start state||
-|A start state||
-|An accepting state||
-|A transition||
+|A state|![state](state.png)|
+|The start state|![start state](start.png)|
+|An accepting state|![](accept.png)|
+|A transition|![](transition.png)|
 
 
 This looks promising: http://ivanzuzak.info/noam/webapps/fsm_simulator/
