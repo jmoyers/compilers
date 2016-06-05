@@ -129,4 +129,14 @@ Epsilon closure - they set of states were you to take every epsilon move from yo
 * NFAs can get into a ton of states - 2<sup>n-1</sup> --- but its FINITE. 
 * Therefore, we can convert to DFA to simulate the machine.
 
+**Goals:**
+* Keep track of what set of states the NFA can be in. 
+* Each individual state of the DFA represents a SET of states from the NFA
+* We use epsilon closure to group them together
+
+**Build DFA:**
+* States = subsets of all the states of NFA
+* Start = epsilon closure of the start state of NFA
+
+
 This looks promising: http://ivanzuzak.info/noam/webapps/fsm_simulator/
