@@ -21,5 +21,15 @@ They both can specify the regular languages. Simply think about it as a characte
 * Otherwise => reject -- this means if there is no transition for the input, it fals as well
 * Otherwise can be said that `S ⊈ F` // not totally sure this is the same symbol
 
+**Finite automata diagrams**
+
+|Name|Symbol|
+|--|--|
+|A state||
+|The start state||
+|A start state||
+|An accepting state||
+|A transition||
+
 
 Created state diagrams with: http://madebyevan.com/fsm/
