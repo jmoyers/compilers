@@ -35,7 +35,7 @@ Okay, so, skipping the dumb ones.
 
 Example (deterministic): any number of 1s, followed by a single 0
 
-![](fig1.png)
+![fig 1](fig1.png)
 
 
 Note I forgot the start arrow, but it starts at A. Follow it in your head and you can pretty easily convince yourself that this which match the description. It also handles rejection, which you can also convince yourself of -- just have to remember that if you don't move, you reject.
