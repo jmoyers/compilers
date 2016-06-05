@@ -39,7 +39,6 @@ Example (deterministic): any number of 1s, followed by a single 0
 
 
 I forgot the start arrow, but it starts at A.
-
 This can be simplified to a table of states and transitions for each input.
 
 |State|0 Input|1 Input|
