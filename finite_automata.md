@@ -67,5 +67,9 @@ I like to work through the obvious paths that look like state transition chains 
 * **Deterministic**: For each input, you can only take one path (no ε moves)
 * **Nondeterministic**: For each input, you can take many paths (can hae ε moves)
 
+We can also use ε-moves to describe any kind of multiple choice route. So the below state diagrams simulate each other.
+
+![epsilon move](epsilon-move.png)
+
 
 This looks promising: http://ivanzuzak.info/noam/webapps/fsm_simulator/
