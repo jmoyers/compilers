@@ -38,13 +38,7 @@ Example (deterministic): any number of 1s, followed by a single 0
 ![fig 1](fig1.png)
 
 
-I forgot the start arrow, but it starts at A.
-This can be simplified to a table of states and transitions for each input.
-
-|State|0 Input|1 Input|
-|--|--|--|
-|A|B  |A|
-|B| | | |
+I forgot the start arrow, but it starts at A. This can be simplified to a table of states and transitions for each input.
 
 This can be a lookup table, in a programming language, such as shown here: http://www.geeksforgeeks.org/searching-for-patterns-set-5-finite-automata/
 
