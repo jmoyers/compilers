@@ -187,3 +187,17 @@ So, things like...
 * add optional fraction: `12.23` 
 * add optional exponent: `12.23E+2`
 
+Symbol = `a ∈ S` means a is an element of set S - https://en.wikipedia.org/wiki/Element_(mathematics)
+
+**So far, covered the "specification for the predicate"**
+
+`S ∈ L(R)` - In plain english, given string S, we want to know if it is in the language given by the set of regular expressions R. For example, given string `12.23` is in the set of the language given by the above pascal number regex set.
+
+Turns out this is not enough for our needs, though.
+
+**What is the formal definition of lexical specification of the language?**
+
+```
+R = Keyword + Identifier + Number + ...
+  = R₁+ R₂ + R₃ + ...
+```
