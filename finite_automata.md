@@ -95,7 +95,7 @@ Finally, we can talk a bit about implementation.
 
 **Converting to NFA**
 
-We look at individual expressions, and where there is a choice, we use epsilon
+We look at individual expressions, and where there is a choice, we use epsilon. Note, each node below can represent a full regular expression.
 
 |R|Diagram|
 |--|--|
