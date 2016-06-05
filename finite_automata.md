@@ -114,4 +114,17 @@ Its compound:
 
 ![compound nfa](compound-nfa.png)
 
+### NFA to DFA
+
+To do this, we'll use epsilon closures to mush states together.
+
+Epsilon closure - they set of states were you to take every epsilon move from your current state. Recursive -- you take all subsequent epsilon moves as well.
+
+* pink = epsilon closure from G
+* blue = epsilon closure from B
+
+![epsilon closure](epsilon-closure.png)
+
+
+
 This looks promising: http://ivanzuzak.info/noam/webapps/fsm_simulator/
