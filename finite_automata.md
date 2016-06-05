@@ -61,6 +61,10 @@ Options (choose 1 regular language to match above):
 
 I like to work through the obvious paths that look like state transition chains which have no options.  From the above, you can work out that there are at least two zeroes in a row before hitting the last node. Due to repeating non-optional zeroes, the last one is correct.
 
-epsilon moves
+### Deterministic vs Nondeterministic
+
+* Deterministic: For each input, you can only take one path
+* Nondeterministic: For each input, you can take many paths
+* Epilson () moves: 
 
 This looks promising: http://ivanzuzak.info/noam/webapps/fsm_simulator/
