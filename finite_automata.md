@@ -27,8 +27,8 @@ They both can specify the regular languages. Simply think about it as a characte
 |--|--|
 |A state|![state](state.png)|
 |The start state|![start state](start.png)|
-|An accepting state|![](accept.png)|
-|A transition|![](transition.png)|
+|An accepting state|![accept state](accept.png)|
+|A transition|![transition](transition.png)|
 
 
 Okay, so, skipping the dumb ones.
