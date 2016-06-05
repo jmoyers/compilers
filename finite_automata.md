@@ -137,6 +137,8 @@ Epsilon closure - they set of states were you to take every epsilon move from yo
 **Build DFA:**
 * States = subsets of all the states of NFA
 * Start = epsilon closure of the start state of NFA
+* Final = any state of the DFA that has at least one of the final states of the NFA
+* Transition Function = X -><sup>a</a> Y
 
 
 This looks promising: http://ivanzuzak.info/noam/webapps/fsm_simulator/
