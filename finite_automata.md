@@ -63,7 +63,7 @@ I like to work through the obvious paths that look like state transition chains 
 
 ### Deterministic vs Nondeterministic
 
-* **Epsilson (ε) moves**: there is a choice whether you take the move
+* **Epsilson (ε) move**: there is a choice whether you take the move
 * **Deterministic**: For each input, you can only take one path (no ε moves)
 * **Nondeterministic**: For each input, you can take many paths (can hae ε moves)
 
