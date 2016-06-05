@@ -136,18 +136,18 @@ Never want one meaning function mapping to two different syntaxes. Means its amb
 
 I'm going to mostly write in the shorthand notation, since thats what every regex engine ever uses.
 
-**Example: Keyword `if` or `else` or `then` or...**
+**Example:** Keyword `if` or `else` or `then` or...
 * Shorthand: `'i''f' + 'e''l''s''e'` becomes `'if' + 'else'`
 * Said as: if union else
 
-**Example: Integer (non-empty string of digits)**
+**Example:** Integer (non-empty string of digits)
 * Naming...
   * `digit = '0'+'1'+'2'...+'9'`
 * Multiple digits...
   * `digit digit*`
   * This pattern is shorthanded to `digit+` (at least one digit)
 
-**Example: Identifier: string of letters or digits, starting with letter**
+**Example:** Identifier: string of letters or digits, starting with letter
 * Letters first...
   * `letter = 'a' + 'b' ... + 'Z'`
   * Shorthand: `letter = [a-zA-Z]`
@@ -155,7 +155,7 @@ I'm going to mostly write in the shorthand notation, since thats what every rege
   * `letter(letter+digit)*`
   * Starts with a letter, followed by union of leter and digit repeated however many times
 
-**Example: Whitespace**
+**Example:** Whitespace
 
 * Escape sequences, oh my
   * \n = newline
@@ -167,7 +167,7 @@ I'm going to mostly write in the shorthand notation, since thats what every rege
 
 Skipping email shit. Not worth it, regex is old hat baby.
 
-**Example: Pascal** - this is a good one. 
+**Example:** Pascal - this is a good one. 
 
 
 > Epsilon means optional (read as Union epsilon, but really they mean OR NOT HERE AT ALL BRO).
@@ -210,7 +210,7 @@ R = Keyword + Identifier + Number + ...
 
 **Ambiguities in this algorithm**
 
-* Example: `==` as input
+* **Example:** `==` as input
   * Is this regarded as a single equals (assignment op) vs double equals (comparison op)
 * "Maximal Munch" -- always take the longer match, normally that does the right thing
 * So therefore its comparison
