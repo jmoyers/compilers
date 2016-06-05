@@ -123,6 +123,7 @@ Epsilon closure - they set of states were you to take every epsilon move from yo
 * pink = epsilon closure from G
 * blue = epsilon closure from B
 
+Note: this is for `(1+0)*1` again.
 ![epsilon closure](epsilon-closure.png)
 
 **Interesting property of NFAs**
@@ -148,6 +149,8 @@ Epsilon closure - they set of states were you to take every epsilon move from yo
     * This part is kind of hard to grok
 
 We don't enumerate every state. Only the ones we need.
+
+Note: The following is `(1+0)*1` again.
 
 **Step 1: Find epsilon closure of start state**
 ![epsilon start](start-nfa-dfa.png)
