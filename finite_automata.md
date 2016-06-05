@@ -13,7 +13,7 @@ They both can specify the regular languages.
 |A set of transitions from state to state|state →<sup>input</sup> state
 
 
-**Transition**
+**Transitions**
 * Defined as: S<sub>1</sub> →<sup>a</sup> S<sub>2</sub>
 * Read as: In state S<sub>1</sub> on input a go to state S<sub>2</sub>
 
