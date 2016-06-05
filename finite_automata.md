@@ -147,5 +147,19 @@ Epsilon closure - they set of states were you to take every epsilon move from yo
     * So `Y=esp-clos(a(X))`
     * This part is kind of hard to grok
 
+We don't enumerate every state. Only the ones we need.
+
+**Step 1: Find epsilon closure of start state**
+![epsilon start](start-nfa-dfa.png)
+
+**Step 2: Follow branch for input 0, get epsilon closure**![input 0 epsilon closure](input0-nfa-dfa.png)
+
+**Step 3: Follow branch for input 1, notice 1 pops up in two places, follow both**
+![input 1 epsilon closure](input1-nfa-dfa.png)
+**Step 4: Get epsilon closure for either 1 transition (includes a final state)**
+![epsilon for 1 input](input1epsilon-nfa-dfa.png)
+**Step 5: Add what happens when you get either a 1 or a 0 afterwards for each branch (final)**
+![Subsequent 0 + 1 input](recurse-nfa-dfa.png)
+Whew, that was gnarly. Honestly, got to take a minute to stew on that I think.
 
 This looks promising: http://ivanzuzak.info/noam/webapps/fsm_simulator/
