@@ -177,6 +177,6 @@ Whew, that was gnarly. Honestly, got to take a minute to stew on that I think.
   * One dimension = states
   * One dimension = input symbols AND epsilon
   * Each transition defines where you end up as well, but its a SET of states
-  * Inner loop turns out to be more expensive, have to carry out all possible moves
+  * Inner loop turns out to be more expensive, have to carry out all possible moves (??)
 
 This looks promising: http://ivanzuzak.info/noam/webapps/fsm_simulator/
