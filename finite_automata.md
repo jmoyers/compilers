@@ -138,7 +138,14 @@ Epsilon closure - they set of states were you to take every epsilon move from yo
 * States = subsets of all the states of NFA
 * Start = epsilon closure of the start state of NFA
 * Final = any state of the DFA that has at least one of the final states of the NFA
-* Transition Function = X -><sup>a</a> Y
+* Transition Function
+  * X →<sup>a</sup> Y
+  * For a given state X, and another state Y, when is there a transition between them on some input a
+  * Under what conditions?
+    * In state X, we need to know the set of states we can reach on input a `a(X)`
+    * Take epsilon closure of that set of states `eps-clos(a(X))`
+    * So `Y=esp-clos(a(X))`
+    * This part is kind of hard to grok
 
 
 This looks promising: http://ivanzuzak.info/noam/webapps/fsm_simulator/
