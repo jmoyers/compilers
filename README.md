@@ -1,3 +1,3 @@
-These are my somewhat organized lecture notes for Stanford Compiler class.
-
-Coursera: [https://www.coursera.org/course/compilers](https://www.coursera.org/course/compilers)
+* Work in progress. 
+* Course notes for Stanford's Compiler course.
+* Posted in static form here: http://jmoyers.org/compilers/
