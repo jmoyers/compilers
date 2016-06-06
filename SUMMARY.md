@@ -5,7 +5,7 @@
 * [Lexical Analysis](lexical_analysis.md)
 * [Finite Automata](finite_automata.md)
 * [Assignment 1: Lexer](assignment_1_lexer.md)
-* Parsing
+* [Parsing](parsing.md)
 * Top Down Parsing
 * Bottom-Up Parsing
 * Bottom-Up Parsing II
