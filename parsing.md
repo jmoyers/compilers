@@ -84,3 +84,31 @@ id * id + id
 
 Context free gramar just gives a yes or no answer. We need the actual parse tree and handle errors.
 Tools are sensitive to the grammar, so you have to fiddle with it toolwise (this course uses Bison).
+
+## Derivation
+
+Draw productions as a tree.
+
+Example grammar: E -> E + E, E * E, (E), id
+Input: id * id + id
+Derivation:
+
+```
+E -> 
+E + E -> 
+E * E + E -> 
+id * E + E ->
+id * id + E ->
+id * id + id
+```
+
+Tree:
+```
+        E
+       /| \
+      E +  E
+     /|\   |
+    E * E  id
+    |   |
+   id   id
+```
