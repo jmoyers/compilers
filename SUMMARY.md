@@ -1,7 +1,7 @@
 # Summary
 
-* [Introduction](cool_language.md)
-* [Cool Language](cool_language.md)
+* [Introduction](README.md)
+* [Cool Lanaguage](cool_language.md)
 * [Lexical Analysis](lexical_analysis.md)
 * [Finite Automata](finite_automata.md)
 * Parsing
