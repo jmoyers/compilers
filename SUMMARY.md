@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [Introduction](cool_language.md)
 * [Cool Language](cool_language.md)
 * [Lexical Analysis](lexical_analysis.md)
 * [Finite Automata](finite_automata.md)
