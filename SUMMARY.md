@@ -4,7 +4,7 @@
 * [Cool Lanaguage](cool_language.md)
 * [Lexical Analysis](lexical_analysis.md)
 * [Finite Automata](finite_automata.md)
-   * Assignment 1: Lexer
+* Assignment 1: Lexer
 * Parsing
 * Top Down Parsing
 * Bottom-Up Parsing
