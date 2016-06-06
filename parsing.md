@@ -82,3 +82,5 @@ id * id + id
 ... and so on
 ```
 
+Context free gramar just gives a yes or no answer. We need the actual parse tree and handle errors.
+Tools are sensitive to the grammar, so you have to fiddle with it toolwise (this course uses Bison).
