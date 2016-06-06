@@ -64,3 +64,21 @@ Example of elements of the language (only terminals)...
 * `while id loop id pool`
 * `if while id loop id pool then id else id` - totally valid nested EXPRs
 
+**Example:** arithmetic operation
+
+```
+E -> E + E // addition
+  | E * E  // multiplication
+  | (E)    // parens
+  | id
+```
+
+In this language...
+
+```
+id
+id + id
+id * id + id 
+... and so on
+```
+
