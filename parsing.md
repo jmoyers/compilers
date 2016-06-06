@@ -89,9 +89,10 @@ Tools are sensitive to the grammar, so you have to fiddle with it toolwise (this
 
 Draw productions as a tree.
 
-Example grammar: E -> E + E, E * E, (E), id
-Input: id * id + id
-Derivation:
+* Example grammar: E -> E + E, E * E, (E), id
+* Input: id * id + id
+
+**Derivation**
 
 ```
 E -> 
@@ -102,7 +103,7 @@ id * id + E ->
 id * id + id
 ```
 
-Tree:
+**Tree**
 ```
         E
        /| \
