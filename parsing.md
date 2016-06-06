@@ -57,3 +57,10 @@ Expr -> if EXPR then EXPR else EXPR fi
       | ... and so on
 ```
 
+Example of elements of the language (only terminals)...
+
+* `id`
+* `if id then id else id fi`
+* `while id loop id pool`
+* `if while id loop id pool then id else id` - totally valid nested EXPRs
+
