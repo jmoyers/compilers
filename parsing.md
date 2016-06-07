@@ -114,7 +114,9 @@ id * id + id
    id   id
 ```
 
-Interesting stuff:
+
+
+**Interesting stuff**
 * A very nice plain english definition of grammars: https://qntm.org/grammar
 * The Chomsky hierarchy shows progressive requirements for parsing more complex grammars: https://en.wikipedia.org/wiki/Chomsky_hierarchy
 * Abstract syntax tree API is described in the cool support tools tour: http://spark-university.s3.amazonaws.com/stanford-compilers/resources/cool-tour.pdf
